@@ -54,6 +54,7 @@ public interface StorageRpc extends ServiceRpc {
     PROJECTION("projection"),
     MAX_RESULTS("maxResults"),
     PAGE_TOKEN("pageToken"),
+    REQUESTED_POLICY_VERSION("optionsRequestedPolicyVersion"),
     DELIMITER("delimiter"),
     VERSIONS("versions"),
     FIELDS("fields"),

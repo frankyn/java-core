@@ -95,8 +95,10 @@ public final class Policy implements Serializable {
                                               return IDENTITY_VALUE_OF_FUNCTION.apply(s);
                                             }
                                           })))
+                          .setCondition(null)
                           .build());
           // TODO(frankyn): Add support for bindingBuilder.setCondition after com.google.iam.v1 is regenerated.
+
         }
         return newBuilder()
                 .setBindingsV3(bindingsV3)

@@ -1379,6 +1379,7 @@ public class HttpStorageRpc implements StorageRpc {
       return storage
           .buckets()
           .getIamPolicy(bucket)
+          .setOptionsRequestedPolicyVersion(Option.REQUESTED_POLICY_VERSION.getLong(options).intValue())
           .setUserProject(Option.USER_PROJECT.getString(options))
           .execute();
     } catch (IOException ex) {
